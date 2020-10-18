@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>测试express与form 之间通信案例</title>
+    <style>
+        p {
+            text-align: center;
+            /* background-color: red; */
+            position: relative;
+            top: 20%;
+        }
+        
+        #wrapper {
+            width: 784px;
+            height: 422px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* background-color: #ffe; */
+            border: 1px solid green;
+            margin-left: -392px;
+            margin-top: -211px;
+            background-image: url("./background.png")
+        }
+        
+        #form1 {
+            text-align: center;
+            /* background-color: green; */
+            position: relative;
+            top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <form id="form1" action="http://localhost:3000/" method="get">
+            <h2>登录信息</h2>
+            <p> 姓 名 : <input type='text' name="name" value="dragon"></p>
+            <p>年 龄 : <input type="number" name="age" value="25"><br /></p>
+            <br>
+            <input type="submit" value="   提    交   " />
+        </form>
+    </div>
+</body>
+
+</html>
